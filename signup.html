@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/libs/bootstrap.min.css">
   <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -42,16 +43,27 @@
   </header>
 
   <main class="main page__main">
-    <section class="signup">
-      <h1>Регистрация</h1>
-      <form class="signup-form signup__form" action="">
-        <label for="name">Имя</label>
-        <input class="signup-form__input" type="text" id="name">
-  
-        <label for="name">Имя</label>
-        <input class="signup-form__input" type="text" id="name">
+    <div class="container-lg">
+      <form>
+        <div class="form-group">
+          <label for="name">Имя</label>
+          <input type="text" class="form-control" id="name" aria-describedby="nameHelp" name="name">
+          <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль</label>
+          <input type="password" class="form-control" id="password" aria-describedby="passwordHelp" name="password">
+          <small id="passwordHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
       </form>
-    </section>
+    </div>
 
   </main>
 
